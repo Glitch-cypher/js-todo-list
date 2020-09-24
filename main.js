@@ -34,9 +34,21 @@ function loopTasks(){
  
 }
 buttonDaily.addEventListener("click", loopTasks);
+// task 4
 
 function changeCol(event){
   event.target.style.color = "lightgreen";
   // col1 = "lightgreen";
 }
 document.addEventListener("click", changeCol);
+
+//task 5
+const buttonClear = document.querySelector("#clear");
+function clearList(event){
+  const lis = document.querySelector('li');
+  while(ul.firstChild){
+    ul.removeChild(ul.firstChild);
+  }
+  
+}
+buttonClear.addEventListener("click", clearList);
