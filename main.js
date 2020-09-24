@@ -34,3 +34,9 @@ function loopTasks(){
  
 }
 buttonDaily.addEventListener("click", loopTasks);
+
+function changeCol(event){
+  event.target.style.color = "lightgreen";
+  // col1 = "lightgreen";
+}
+document.addEventListener("click", changeCol);
